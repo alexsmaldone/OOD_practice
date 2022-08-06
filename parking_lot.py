@@ -1,7 +1,17 @@
 #parking lot
 class ParkingLot:
   def __init__(self, parking_spaces):
-    self.slots = parking_spaces * [None]
+    self.total_slots = parking_spaces
+    self.available_slots = parking_spaces
 
-  def park(carId):
-    print(f"Parking car: {carId}")
+  def park(self):
+    pass
+
+  def remove_car(self):
+    pass
+
+  def get_slots(self):
+    return self.available_slots
+
+  def is_full(self):
+    return self.available_slots == 0
