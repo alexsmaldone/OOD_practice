@@ -5,11 +5,14 @@ class ParkingLot:
     self.available_slots = parking_spaces
 
   def park(self):
-    pass
+    if not self.is_full():
+      self.available_slots -= 1
+    else:
+      return f"Cannot park car in full lot."
 
   def remove_car(self):
     if not self.is_empty():
-      self.available_slots -= 1
+      self.available_slots += 1
     else:
       return f"Cannot remove car from empty parking lot."
 
