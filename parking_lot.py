@@ -24,3 +24,20 @@ class ParkingLot:
 
   def is_empty(self):
     return self.available_slots == self.total_slots
+
+
+newLot = ParkingLot(5)
+
+
+print(newLot.park())
+print(newLot.park())
+print(newLot.park())
+print(newLot.park())
+print(newLot.park())
+print(newLot.park())
+print(newLot.remove_car())
+print(newLot.remove_car())
+print(newLot.remove_car())
+print(newLot.remove_car())
+print(newLot.remove_car())
+print(newLot.remove_car())
